@@ -1,6 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./style.css";
+import "./style/reset.css";
+import "./style/style.css";
 import App from "./App";
+import { BrowserRouter as Router } from "react-router-dom";
+import { ContextProvider } from "./Context";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <ContextProvider>
+    <Router>
+      <App />
+    </Router>
+  </ContextProvider>,
+  document.getElementById("root")
+);

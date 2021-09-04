@@ -1,11 +1,23 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
+import Header from "./components/Header";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <p>Hello World!</p>
+    <div>
+      <Header />
+
+      <Switch>
+        <Route exact path="/">
+          <p>Hello</p>
+        </Route>
+
+        <Route path="/world">
+          <p>World</p>
+        </Route>
+      </Switch>
     </div>
   );
-}
+};
 
 export default App;

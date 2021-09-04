@@ -1,0 +1,24 @@
+display {
+  background-color: #f8f8ff;
+}
+
+.header {
+  background-image: linear-gradient(to right, #0285bd, #0d8997);
+  font-family: sans-serif;
+  font-size: 55px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+
+.header > h1 {
+  margin: auto;
+  color: #daedf2;
+}
+
+.home {
+  color: #daedf2;
+  cursor: pointer;
+}
