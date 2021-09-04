@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
+import Selection from "./pages/Selection"
 
 const App = () => {
   return (
@@ -9,7 +10,7 @@ const App = () => {
 
       <Switch>
         <Route exact path="/">
-          <p>Hello</p>
+          <Selection />
         </Route>
 
         <Route path="/world">

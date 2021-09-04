@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from "react";
+import { data } from "./data/data";
 
 const Context = React.createContext();
 
 const ContextProvider = ({ children }) => {
-  const [state1, setState1] = useState(0);
+  const [portfolio, setPortfolio] = useState([]);
 
   useEffect(() => {
-    setState1(1);
+    setPortfolio(data);
   }, []);
 
   return (
     <Context.Provider
       value={{
-        state1,
+        portfolio,
       }}
     >
       {children}
