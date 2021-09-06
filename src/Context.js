@@ -5,6 +5,7 @@ const Context = React.createContext();
 
 const ContextProvider = ({ children }) => {
   const [portfolio, setPortfolio] = useState([]);
+  // const [selectedOption, setSelectedOption] = useState({});
 
   useEffect(() => {
     setPortfolio(data);

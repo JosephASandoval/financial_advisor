@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Selection from "./pages/Selection";
+import RiskSelector from "./pages/RiskSelector";
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
 
       <Switch>
         <Route exact path="/">
-          <Selection />
+          <RiskSelector />
         </Route>
 
         <Route path="/world">

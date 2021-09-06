@@ -110,7 +110,7 @@ li {
 #continue {
   margin-left: 5px;
   margin-top: 5px;
-  opacity: 1;
+  opacity: 0.4;
 }
 
 .button {
@@ -134,3 +134,11 @@ li {
   display: flex;
   width: 720px;
 }
+
+/* #jsGrid {
+  margin-top: 20px;
+}
+
+.jsgrid-grid-body{
+  overflow: hidden !important;
+} */
