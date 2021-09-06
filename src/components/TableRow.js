@@ -1,8 +1,11 @@
 import React from "react";
 
-const TableRow = ({ option }) => {
+const TableRow = ({ option, selectedOption }) => {
+  let displayRow =
+    option.risk === selectedOption ? "table-row-highlight" : "table-row";
+
   return (
-    <tr>
+    <tr className={displayRow}>
       <td>{option.risk}</td>
       <td>{option.bonds}</td>
       <td>{option.largeCap}</td>

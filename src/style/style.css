@@ -31,7 +31,7 @@ header {
   font-family: "Roboto", sans-serif;
 }
 
-#risk-selector-container {
+.risk-selector-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -67,18 +67,18 @@ header {
   margin-top: 5px;
 }
 
-#risk-selector-button-container {
+.risk-selector-button-container {
   display: flex;
 }
 
-#risk-selector {
+.risk-selector {
   display: inherit;
   height: 60px;
   width: 620px;
   align-self: center;
 }
 
-#risk-selector ul {
+.risk-selector ul {
   display: inherit;
   width: 620px;
 }
@@ -87,8 +87,8 @@ li {
   list-style: none;
 }
 
-#risk-selector .option-unselected,
-#risk-selector .option-unselected-disable {
+.risk-selector .option-unselected,
+.risk-selector .option-unselected-disable {
   background-color: white;
   display: flex;
   justify-content: center;
@@ -104,7 +104,7 @@ li {
   cursor: pointer;
 }
 
-#risk-selector .option-selected {
+.risk-selector .option-selected {
   background-color: #e6ff3f;
   display: flex;
   justify-content: center;
@@ -120,11 +120,11 @@ li {
   cursor: pointer;
 }
 
-#risk-selector .option-unselected:hover {
+.risk-selector .option-unselected:hover {
   background-color: #e6ff3f;
 }
 
-#risk-selector .option-unselected-disable:hover {
+.risk-selector .option-unselected-disable:hover {
   background-color: white;
 }
 
@@ -152,16 +152,47 @@ li {
   opacity: 1;
 }
 
-#graphic {
+.graphic {
   position: relative;
   display: flex;
   width: 720px;
 }
 
-/* #jsGrid {
+.table {
   margin-top: 20px;
 }
 
-.jsgrid-grid-body{
-  overflow: hidden !important;
-} */
+.risk {
+  width: 50px;
+}
+
+.table-head {
+  display: flex;
+  padding: 3.5px;
+}
+
+th {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  width: 100px;
+  margin: 3.5px 13px;
+}
+
+.table-row,
+.table-row-highlight {
+  display: flex;
+  padding: 3.5px;
+}
+
+.table-row-highlight {
+  background-color: #e6ff3f;
+}
+
+td {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  width: 100px;
+  margin: 3.5px 13px;
+}

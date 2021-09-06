@@ -3,8 +3,8 @@ import React from "react";
 const TableHead = () => {
   return (
     <thead>
-      <tr>
-        <th>Risk</th>
+      <tr className="table-head">
+        <th className="risk">Risk</th>
         <th>Bonds %</th>
         <th>Large Cap %</th>
         <th>Mid Cap %</th>

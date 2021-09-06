@@ -25,8 +25,8 @@ const ButtonContainer = () => {
   });
 
   return (
-    <div id="risk-selector-button-container">
-      <div id="risk-selector">
+    <div className="risk-selector-button-container">
+      <div className="risk-selector">
         <ul>{options}</ul>
       </div>
       <div className={displayContinue}>Continue</div>
