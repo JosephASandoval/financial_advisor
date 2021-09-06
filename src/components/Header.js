@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HomeIcon from "@material-ui/icons/Home";
+import homeImg from "../images/home.png";
 
 const Header = () => {
   return (
-    <div className="header">
+    <header>
       <Link to="/">
-        <HomeIcon fontSize="inherit" className="home" />
+        <img id="top-logo" src={homeImg} alt="home" />
       </Link>
-      <h1>Financial Advisor</h1>
-    </div>
+      <div id="app-title">Financial Advisor</div>
+    </header>
   );
 };
 

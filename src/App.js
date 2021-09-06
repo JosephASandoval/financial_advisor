@@ -1,11 +1,11 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Selection from "./pages/Selection"
+import Selection from "./pages/Selection";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
 
       <Switch>
@@ -17,7 +17,7 @@ const App = () => {
           <p>World</p>
         </Route>
       </Switch>
-    </div>
+    </>
   );
 };
 
