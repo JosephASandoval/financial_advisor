@@ -128,8 +128,8 @@ li {
   background-color: white;
 }
 
-.button-unselected,
-.button-selected {
+.button-deactivated,
+.button-activated {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,8 +148,12 @@ li {
   opacity: 0.4;
 }
 
-.button-selected {
+.button-activated {
   opacity: 1;
+}
+
+.button-link {
+  text-decoration: none;
 }
 
 .graphic {
