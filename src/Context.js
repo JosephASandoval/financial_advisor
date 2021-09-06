@@ -5,7 +5,7 @@ const Context = React.createContext();
 
 const ContextProvider = ({ children }) => {
   const [portfolio, setPortfolio] = useState([]);
-  // const [selectedOption, setSelectedOption] = useState({});
+  const [selectedOption, setSelectedOption] = useState(0);
 
   useEffect(() => {
     setPortfolio(data);
@@ -15,6 +15,8 @@ const ContextProvider = ({ children }) => {
     <Context.Provider
       value={{
         portfolio,
+        selectedOption,
+        setSelectedOption,
       }}
     >
       {children}

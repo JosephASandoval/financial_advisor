@@ -4,7 +4,7 @@ import TableRow from "./TableRow";
 
 const Table = ({ portfolio }) => {
   const tableRows = portfolio.map((option) => {
-    return <TableRow option={option} />;
+    return <TableRow key={option.id} option={option} />;
   });
 
   return (

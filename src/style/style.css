@@ -87,7 +87,8 @@ li {
   list-style: none;
 }
 
-#risk-selector li {
+#risk-selector .option-unselected,
+#risk-selector .option-unselected-disable {
   background-color: white;
   display: flex;
   justify-content: center;
@@ -103,17 +104,32 @@ li {
   cursor: pointer;
 }
 
-#risk-selector li:hover {
+#risk-selector .option-selected {
+  background-color: #e6ff3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 62px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 2px;
+  font-size: 27px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#risk-selector .option-unselected:hover {
   background-color: #e6ff3f;
 }
 
-#continue {
-  margin-left: 5px;
-  margin-top: 5px;
-  opacity: 0.4;
+#risk-selector .option-unselected-disable:hover {
+  background-color: white;
 }
 
-.button {
+.button-unselected,
+.button-selected {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,6 +143,13 @@ li {
   font-weight: 600;
   background-color: #73d0ff;
   cursor: pointer;
+  margin-left: 5px;
+  margin-top: 5px;
+  opacity: 0.4;
+}
+
+.button-selected {
+  opacity: 1;
 }
 
 #graphic {

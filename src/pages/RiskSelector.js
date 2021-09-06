@@ -7,22 +7,10 @@ import Table from "../components/Table";
 const RiskSelector = () => {
   const { portfolio } = useContext(Context);
 
-  function handleClick(risk) {
-    console.log(`option ${risk} was clicked!`);
-  }
-
-  const options = portfolio.map((option) => {
-    return (
-      <li key={option.id} onClick={() => handleClick(option.risk)}>
-        {option.risk}
-      </li>
-    );
-  });
-
   return (
     <div id="risk-selector-container">
       <HeaderLabels />
-      <ButtonContainer options={options} />
+      <ButtonContainer />
       <Table portfolio={portfolio} />
     </div>
   );
