@@ -200,3 +200,23 @@ td {
   width: 100px;
   margin: 3.5px 13px;
 }
+
+.risk-calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.risk-calculator-label{
+  font-size: 28px;
+  font-weight: bold;
+  align-self: center;
+}
+.risk-calculator-label-container{
+  margin: 10px;
+}
+.risk-calculator-label-risk{
+  font-size: 22px;
+  font-weight: bold;
+}
+

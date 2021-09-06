@@ -1,7 +1,7 @@
 import React from "react";
-import HeaderLabels from "../components/HeaderLabels";
-import ButtonContainer from "../components/ButtonContainer";
-import Table from "../components/Table";
+import HeaderLabels from "../components/selector/HeaderLabels";
+import ButtonContainer from "../components/selector/ButtonContainer";
+import Table from "../components/selector/Table";
 
 const RiskSelector = () => {
   return (

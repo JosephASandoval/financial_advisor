@@ -1,9 +1,10 @@
 import React from "react";
+import Header from "../components/calculator/Header";
 
 const RiskCalculator = () => {
   return (
     <div className="risk-calculator-container">
-      <p>Calculator</p>
+      <Header />
     </div>
   );
 };

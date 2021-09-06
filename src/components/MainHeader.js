@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import homeImg from "../images/home.png";
 
-const Header = () => {
+const MainHeader = () => {
   return (
     <header>
       <Link to="/">
@@ -13,4 +13,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default MainHeader;

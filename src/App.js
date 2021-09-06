@@ -1,13 +1,13 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Header from "./components/Header";
+import MainHeader from "./components/MainHeader";
 import RiskSelector from "./pages/RiskSelector";
 import RiskCalculator from "./pages/RiskCalculator";
 
 const App = () => {
   return (
     <>
-      <Header />
+      <MainHeader />
 
       <Switch>
         <Route exact path="/">
