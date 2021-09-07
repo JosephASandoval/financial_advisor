@@ -2,7 +2,7 @@ import React from "react";
 
 const TableRow = ({ option, selectedOption }) => {
   let displayRow =
-    option.risk === selectedOption ? "table-row-highlight" : "table-row";
+    option.risk === selectedOption.risk ? "table-row-highlight" : "table-row";
 
   return (
     <tr className={displayRow}>

@@ -9,7 +9,7 @@ const Table = () => {
   const tableRows = portfolio.map((option) => {
     return (
       <TableRow
-        key={option.id}
+        key={option.risk}
         option={option}
         selectedOption={selectedOption}
       />

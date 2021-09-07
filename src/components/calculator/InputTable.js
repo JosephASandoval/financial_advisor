@@ -5,7 +5,9 @@ import InputMain from "./InputMain";
 
 const InputTable = () => {
   const { portfolio, selectedOption } = useContext(Context);
-  const riskLevel = portfolio.filter((level) => level.risk === selectedOption);
+  const riskLevel = portfolio.filter(
+    (level) => level.risk === selectedOption.risk
+  );
   const [option] = riskLevel;
 
   return (

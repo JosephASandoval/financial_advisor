@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const ButtonContainer = () => {
   const { portfolio, selectedOption, setSelectedOption } = useContext(Context);
-  let handleHover = selectedOption !== 0 ? "-disable" : "";
+  let handleHover = selectedOption.risk !== 0 ? "-disable" : "";
   let displayContinue =
-    selectedOption !== 0 ? (
+    selectedOption.risk !== 0 ? (
       <Link to="/calculator" className="button-link">
         <div className="button-activated">Continue</div>
       </Link>
@@ -22,15 +22,15 @@ const ButtonContainer = () => {
 
   const options = portfolio.map((option) => {
     let displayOption =
-      option.risk === selectedOption
+      option.risk === selectedOption.risk
         ? "option-selected"
         : `option-unselected${handleHover}`;
 
     return (
       <li
-        key={option.id}
+        key={option.risk}
         className={displayOption}
-        onClick={() => setSelectedOption(option.risk)}
+        onClick={() => setSelectedOption(option)}
       >
         {option.risk}
       </li>

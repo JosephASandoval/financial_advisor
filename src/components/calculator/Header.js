@@ -5,7 +5,9 @@ import SelectedTableBody from "./SelectedTableBody";
 
 const Header = () => {
   const { portfolio, selectedOption } = useContext(Context);
-  const riskLevel = portfolio.filter((level) => level.risk === selectedOption);
+  const riskLevel = portfolio.filter(
+    (level) => level.risk === selectedOption.risk
+  );
   const [option] = riskLevel;
 
   return (
