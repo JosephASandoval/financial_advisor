@@ -207,16 +207,100 @@ td {
   align-self: center;
 }
 
-.risk-calculator-label{
+.risk-calculator-label {
   font-size: 28px;
   font-weight: bold;
   align-self: center;
 }
-.risk-calculator-label-container{
+.risk-calculator-label-container {
   margin: 10px;
 }
-.risk-calculator-label-risk{
+.risk-calculator-label-risk {
   font-size: 22px;
   font-weight: bold;
 }
 
+.current-investment-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.risk-calculator-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-size: 17px;
+  background: white;
+  border: 1px solid #e9e9e9;
+  border-radius: 2px;
+}
+
+.risk-calculator-input-labels {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  padding-left: 65px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.risk-calculator-input-labels label:nth-child(1) {
+  margin-right: 60px;
+}
+
+.risk-calculator-input-labels label:nth-child(2) {
+  margin-right: 30px;
+}
+
+.risk-calculator-input-labels label:nth-child(3) {
+  margin-right: 11px;
+}
+
+.risk-calculator-main {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  position: relative;
+}
+
+.risk-calculator-main-row {
+  display: flex;
+  position: relative;
+  margin: 10px;
+  align-items: center;
+}
+
+.risk-calculator-main-row-box {
+  position: absolute;
+  left: 103px;
+}
+
+.risk-calculator-main-row input:nth-child(1) {
+  -webkit-animation: pulse 0.7s;
+  -webkit-animation-iteration-count: 3;
+  animation: pulse 0.7s;
+  animation-iteration-count: 3;
+  outline: 0;
+}
+
+.risk-calculator-transfers{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  height: 179px !important;
+  width: 170px !important;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.risk-calculator-transfers div{
+ margin: 4px;
+}
