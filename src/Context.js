@@ -39,6 +39,22 @@ const ContextProvider = ({ children }) => {
     setPortfolio(data);
   }, []);
 
+  useEffect(() => {
+    if (typeof newAmount.bonds !== "string") {
+      setDifference({
+        bonds: Math.round((newAmount.bonds - currentAmount.bonds) * 100) / 100,
+        largeCap:
+          Math.round((newAmount.largeCap - currentAmount.largeCap) * 100) / 100,
+        midCap:
+          Math.round((newAmount.midCap - currentAmount.midCap) * 100) / 100,
+        foreign:
+          Math.round((newAmount.foreign - currentAmount.foreign) * 100) / 100,
+        smallCap:
+          Math.round((newAmount.smallCap - currentAmount.smallCap) * 100) / 100,
+      });
+    }
+  }, [newAmount]);
+
   return (
     <Context.Provider
       value={{
@@ -48,7 +64,6 @@ const ContextProvider = ({ children }) => {
         currentAmount,
         setCurrentAmount,
         difference,
-        setDifference,
         newAmount,
         setNewAmount,
       }}

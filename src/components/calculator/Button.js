@@ -2,8 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../../Context";
 
 const Button = () => {
-  const { currentAmount, setDifference, setNewAmount, selectedOption } =
-    useContext(Context);
+  const { currentAmount, setNewAmount, selectedOption } = useContext(Context);
 
   let isCurrentAmountEntered = Object.values(currentAmount).every(
     (value) => value.length > 0

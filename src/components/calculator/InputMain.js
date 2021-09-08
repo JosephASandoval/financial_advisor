@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { Context } from "../../Context";
 
 const InputMain = () => {
-  const { currentAmount, setCurrentAmount, newAmount } = useContext(Context);
+  const { currentAmount, setCurrentAmount, newAmount, difference } =
+    useContext(Context);
 
   function handleCurrentAmount(e) {
     const { name, value } = e.target;
@@ -25,12 +26,7 @@ const InputMain = () => {
             value={currentAmount.bonds}
             onChange={handleCurrentAmount}
           />
-          <input
-            type="text"
-            name="bonds"
-            // value={difference}
-            disabled
-          />
+          <input type="text" name="bonds" value={difference.bonds} disabled />
           <input type="text" name="bonds" value={newAmount.bonds} disabled />
         </div>
       </div>
@@ -46,7 +42,7 @@ const InputMain = () => {
           <input
             type="text"
             name="largeCap"
-            // value={difference}
+            value={difference.largeCap}
             disabled
           />
           <input
@@ -66,12 +62,7 @@ const InputMain = () => {
             value={currentAmount.midCap}
             onChange={handleCurrentAmount}
           />
-          <input
-            type="text"
-            name="midCap"
-            // value={difference}
-            disabled
-          />
+          <input type="text" name="midCap" value={difference.midCap} disabled />
           <input type="text" name="midCap" value={newAmount.midCap} disabled />
         </div>
       </div>
@@ -87,7 +78,7 @@ const InputMain = () => {
           <input
             type="text"
             name="foreign"
-            // value={difference}
+            value={difference.foreign}
             disabled
           />
           <input
@@ -110,7 +101,7 @@ const InputMain = () => {
           <input
             type="text"
             name="smallCap"
-            // value={difference}
+            value={difference.smallCap}
             disabled
           />
           <input
