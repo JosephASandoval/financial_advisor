@@ -289,7 +289,7 @@ td {
   outline: 0;
 }
 
-.risk-calculator-transfers{
+.risk-calculator-transfers {
   position: absolute;
   right: 10px;
   top: 5px;
@@ -301,6 +301,18 @@ td {
   font-size: 14px;
 }
 
-.risk-calculator-transfers div{
- margin: 4px;
+.risk-calculator-transfers div {
+  margin: 4px;
+}
+
+input[class="risk-calculator-main-new"] {
+  color: blue;
+}
+
+input[class="risk-calculator-main-diff-neg"] {
+  color: red;
+}
+
+input[class="risk-calculator-main-diff-pos"] {
+  color: green;
 }
